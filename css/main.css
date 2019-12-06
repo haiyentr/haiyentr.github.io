@@ -1171,7 +1171,7 @@ h2.title {
 }
 
 .category-tab ul {
-  background: #40403E;
+  background: #000000;
   border-bottom: 1px solid #b0b435;
   list-style: none outside none;
   margin: 0 0 30px;
@@ -1182,7 +1182,7 @@ h2.title {
 .category-tab ul li a {
   border: 0 none;
   border-radius: 0;
-  color: #B3AFA8;
+  color: #ffffff;
   display: block;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -1371,7 +1371,11 @@ h2.title {
 }
 
 
-#reviews {
+#details {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#history {
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -1541,7 +1545,7 @@ h2.title {
   margin-top: 8px;
 
 }
-
+.shop-history-tab,
 .shop-details-tab {
   border: 1px solid #F7F7F0;
   margin-bottom: 5px;
@@ -1550,19 +1554,19 @@ h2.title {
   background: #000000;
   padding-bottom: 10px;
 }
-
+.shop-history-tab .col-sm-12 p,
 .shop-details-tab .col-sm-12 p{
   padding-left: 10px;
-  padding-right: 0;
+  padding-right: 0px;
   margin-top: 10px;
   font-size: 20px;
   color: #fff;
   background: #000000;
-
 }
 
 
-#reviews ul {
+#details ul, 
+#history ul {
   background: #FFFFFF;
   border: 0 none;
   list-style: none outside none;
@@ -1570,11 +1574,13 @@ h2.title {
   padding: 0;
 }
 
-#reviews ul li {
+#details ul li, 
+#history ul li {
   display: inline-block;
 }
 
-#reviews ul li a {
+#details ul li a,
+#history ul li a{
   color: #696763;
   display: block;
   font-family: 'Roboto', sans-serif;
@@ -1582,25 +1588,31 @@ h2.title {
   padding-right: 15px;
 }
 
-#reviews ul li a i {
-  color: #FE980F;
+#details ul li a i,
+#history ul li a i {
+  color: #b0b435;
   padding-right: 8px;
 }
 
-#reviews ul li a:hover {
+#history ul li a:hover ,
+#details ul li a:hover {
   background: #fff;
-  color: #FE980F;
+  color: #b0b435;
+}
+#history p,
+#details p {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  margin-bottom: 200px ;
+  font-size: 15px;
+  font-weight: 500px;
 }
 
-#reviews p {
-  color: #363432;
-}
-
-#reviews form span {
+#details form span {
   display: block;
 }
-
-#reviews form span input {
+#history form span input,
+#details form span input {
   background: #F0F0E9;
   border: 0 none;
   color: #A6A6A1;
@@ -1611,11 +1623,11 @@ h2.title {
   width: 48%;
 }
 
-#reviews form span input:last-child {
+#details form span input:last-child {
   margin-left: 3%;
 }
-
-#reviews textarea {
+#history textarea,
+#details textarea {
   background: #F0F0E9;
   border: medium none;
   color: #A6A6A1;
@@ -1629,7 +1641,7 @@ h2.title {
   width: 99.5%;
 }
 
-#reviews button {
+#details button {
   background: #FE980F;
   border: 0 none;
   border-radius: 0;
@@ -1677,6 +1689,83 @@ h2.title {
   padding: 8px 40px;
 }
 
+/************************
+*********sell form********
+**************************/
+#sell-form {
+  display: block;
+  margin-bottom: 65px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.sell-form h2 {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.sell-form form input {
+  background: #F0F0E9;
+  border: medium none;
+  color: #000000;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  margin-bottom: 10px;
+  outline: medium none;
+  padding-left: 10px;
+  width: 100%;
+}
+.sell-form form select {
+  background: #F0F0E9;
+  border: medium none;
+  color: #000000;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  margin-bottom: 10px;
+  outline: medium none;
+  padding-left: 10px;
+  width: 100%;
+}
+.sell-form form label input {
+  background: #F0F0E9;
+  border: medium none;
+  color: #000000;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 100px;
+  height: 20px;
+  padding-top: 150px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  width: 20px;
+}
+.sell-form form button {
+  margin-top: 5px;
+}
+
+.sell-form form button{
+  background: #b0b435;
+  border: medium none;
+  border-radius: 0;
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  padding: 6px 35px;
+
+}
+#avatar{
+  background: none;
+  color: #000000;
+}
 
 /*************************
 *******login page CSS******
