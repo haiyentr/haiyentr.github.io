@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>My Account | Online Auction</title>
+    <title>Winin | Online Auction</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -15,7 +15,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="images/icon/logo2.jpg">
+    <link rel="shortcut icon" href="/images/icon/logo2.jpg">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
@@ -38,9 +38,9 @@
                         </div>
                         <div class="our-link">
                             <ul>
-                                <li><a href="bidderaccount.html"><i class="fa fa-user s_color"></i> My Account</a></li>
+                                <li><a href="selleraccount.html"><i class="fa fa-user s_color"></i> My Account</a></li>
                                 <li><a href="watchlist.html"><i class="fa fa-eye"></i> Watchlist</a></li>
-                                <li><a href="biddercontact.html"><i class="fa fa-phone"></i> Contact Us</a></li>
+                                <li><a href="sellercontact.html"><i class="fa fa-phone"></i> Contact Us</a></li>
                                 <li><a href="index.html"><i class="fa fa-sign-out"></i> Logout</a></li>
                             </ul>
                         </div>
@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <a href="bidderindex.html"><img src="images/icon/logo2.jpg" alt="" /></a>
+                        <a href="sellerindex.html"><img src="images/icon/logo2.jpg" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -73,22 +73,6 @@
                                 <span class="icon-bar"></span>
                             </button>
                         </div>
-                        <div class="mainmenu pull-left">
-                            <ul class="nav navbar-nav collapse navbar-collapse">
-                                <li><a href="bidderindex.html" class="active">Home</a></li>
-                                <li class="dropdown"><a href="">Category<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="bidderelectronicdevice.html">Electronic Device</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="" onclick="return upgrade()">Sell</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="search_box pull-right">
-                            <input type="text" placeholder="Search" />
-                        </div>
                     </div>
                 </div>
             </div>
@@ -96,87 +80,76 @@
         <!--/header-bottom-->
     </header>
     <!--/header-->
-    <section>
+    <!-- Start Wishlist  -->
+    <div class="watchlist-box-main">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
-                    <div class="left-sidebar">
-                        <h2>Information</h2>
-                        <div class="panel-group category-products" id="accordian">
-                            <!--account information-->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="bidderaccount.html">
-                                            Account Information
+                <div class="col-lg-12">
+                    <div class="table-main table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Images</th>
+                                    <th>Product Name</th>
+                                    <th>Highest Bid </th>
+                                    <th>Rating </th>
+                                    <th>Review</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="thumbnail-img">
+                                        <img class="img-fluid" src="images/smartphone/iphone11.jpg" alt="" />
+                                    </td>
+                                    <td class="name-pr">
+                                        Apple Iphone 11
                                         </a>
-                                    </h4>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a href="bidderchangepassword.html">
-                                                Change Password
-                                            </a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/account-information-->
-                        <h2>Listing</h2>
-                        <div class="panel-group category-products" id="accordian">
-                            <!--account information-->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="watchlist.html">
-                                            Watchlist
+                                    </td>
+                                    <td class="price-pr">
+                                        <p>19.500.000 VND</p>
+                                    </td>
+                                    <td class="rating-pr">
+                                        <a href="#">
+                                            <i class="fa fa-thumbs-up"></i>
                                         </a>
-                                    </h4>
-                                </div>
-                                <div></div>
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="bidderactive.html">
-                                            Active
+                                        <a href="#">
+                                            <i class="fa fa-thumbs-down"></i>
                                         </a>
-                                    </h4>
-                                </div>
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="successful.html">
-                                            Successful
+                                    </td>
+                                    <td class="review-pr">
+                                        <input type="text" placeholder="Write your review">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="thumbnail-img">
+                                        <img class="img-fluid" src="images/smartphone/note10.jpg" alt="" />
+                                    </td>
+                                    <td class="name-pr">
+                                        Samsung Galaxy Note 10
+                                    </td>
+                                    <td class="price-pr">
+                                        <p>16.500.000 VND</p>
+                                    </td>
+                                    <td class="rating-pr">
+                                        <a href="#">
+                                            <i class="fa fa-thumbs-up"></i>
                                         </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-9 padding-right">
-                    <div class="bidder_account">
-                        <!--end_soon_items-->
-                        <h2 class="title text-center">Information</h2>
-                        <div class="col-sm-12">
-                            <div class="account-form">
-                                <form>
-                                    Username:<br> <input type="text" name="username" value="bidder" disabled><br>
-                                    Fullname:<br> <input type="text" name="fullname" value="Bidder"><br>
-                                    Email:<br> <input type="text" name="email" value="Bidder@gmail.com"><br>
-                                    D.O.B:<br> <input type="text" name="dob" value="30/04/1999"><br>
-                                    <button type="submit" class="btn btn-default"
-                                        onclick="return bidder_account_info(1)">Save</button>
-                                    <button type="Cancel" class="btn btn-default"
-                                        onclick="return bidder_account_info(0)"">Cancel</button>
-                                </form>
-                            </div>
-                        </div>
+                                        <a href="#">
+                                            <i class="fa fa-thumbs-down"></i>
+                                        </a>
+                                    </td>
+                                    <td class="review-pr">
+                                        <input type="text" placeholder="Write your review">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- End Wishlist -->
     <footer id="footer">
         <!--Footer-->
         <div class="footer-widget">
@@ -239,7 +212,6 @@
     <script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
-    
 </body>
 
 </html>

@@ -38,8 +38,10 @@
                         </div>
                         <div class="our-link">
                             <ul>
-                                <li><a href="contact.html"><i class="fa fa-phone"></i> Contact Us</a></li>
-                                <li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+                                <li><a href="bidderaccount.html"><i class="fa fa-user s_color"></i> My Account</a></li>
+                                <li><a href="watchlist.html"><i class="fa fa-eye"></i> Watchlist</a></li>
+                                <li><a href="biddercontact.html"><i class="fa fa-phone"></i> Contact Us</a></li>
+                                <li><a href="index.html"><i class="fa fa-lock"></i> Logout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -52,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <a href="index.html"><img src="images/icon/logo2.jpg" alt="" /></a>
+                        <a href="bidderindex.html"><img src="images/icon/logo2.jpg" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -73,12 +75,13 @@
                         </div>
                         <div class="mainmenu pull-left">
                             <ul class="nav navbar-nav collapse navbar-collapse">
-                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="bidderindex.html" class="active">Home</a></li>
                                 <li class="dropdown"><a href="">Category<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="electronicdevice.html">Electronic Device</a></li>
+                                        <li><a href="bidderelectronicdevice.html">Electronic Device</a></li>
                                     </ul>
                                 </li>
+                                <li><a href="" onclick="return upgrade()">Sell</a></li>
                             </ul>
                         </div>
                     </div>
@@ -114,8 +117,8 @@
                                 <div id="electronicdevice" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <ul>
-                                            <li><a href="smartphone.html">Smartphone </a></li>
-                                            <li><a href="laptop.html">Laptop </a></li>
+                                            <li><a href="biddersmartphone.html">Smartphone </a></li>
+                                            <li><a href="bidderlaptop.html">Laptop </a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -171,6 +174,14 @@
                                 <span>
                                     <span>17.0000.000 VND</span>
                                     <br>
+                                    <button type="button" class="btn btn-fefault quick_bid">
+                                        Quick Bid 17.100.000 VND
+                                    </button>
+                                    <br>
+                                    <input type="text" placeholder="Minimum bid 17.100.000 VND" />
+                                    <button type="button" class="btn btn-fefault submit">
+                                        Submit
+                                    </button>
                                 </span>
                                 <p><b>Seller:</b> Nguyen Duy Tan <b> Rating:</b> 4.9</p>
                                 <p><b>Highest bidder:</b> ***Hai Yen <b>Rating:</b> 4.9 </p>
@@ -178,6 +189,8 @@
                                 <div class="remaingtime">
                                     <p><b>Remaing time:</b> 2 Days 07:22:00</p>
                                 </div>
+                                <button type="button" class="btn btn-default add-to-cart"><i
+                                        class="fa fa-plus-square"></i>Add to watchlist</button>
                             </div>
                             <!--/product-information-->
                         </div>
@@ -187,9 +200,35 @@
                         <h2>Details</h2>
 
                         <p>Samsung Galaxy s10 plus made by Samsung company.
-                        </p><br>
+                        </p>
                     </div>
-                    
+
+                    <div class="col-sm-12">
+                        <h2>History</h2>
+                        <table id="history" style="width:100%">
+                            <tr>
+                                <th>Time</th>
+                                <th>Bidder</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>5/12/2019 20:00:00</td>
+                                <td>************Smith</td>
+                                <td>17.000.000 VND</td>
+                            </tr>
+                            <tr>
+                                <td>4/12/2019 10:04:00</td>
+                                <td>************An</td>
+                                <td>16.900.000 VND</td>
+                            </tr>
+                            <tr>
+                                <td>3/12/2019 21:30:20</td>
+                                <td>************Van</td>
+                                <td>16.800.000 VND</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
                 </div>
             </div>
             <!--/category-tab-->
@@ -205,9 +244,10 @@
                                     <div class="single-products">
                                         <div class="productinfo text-center">
                                             <img src="images/smartphone/s8+.jpg" alt="" />
-                                            <h4><a href="productdetail.html">SAMSUNG GALAXY S8 PLUS</a></h4>
+                                            <h4><a href="bidderproductdetail.html">SAMSUNG GALAXY S8 PLUS</a></h4>
                                             <h5> 17.000.000 VND</h5>
-                                            
+                                            <button type="button" class="btn btn-default add-to-cart"><i
+                                                    class="fa fa-plus-square"></i>Add to watchlist</button>
                                         </div>
                                     </div>
                                 </div>
@@ -217,9 +257,10 @@
                                     <div class="single-products">
                                         <div class="productinfo text-center">
                                             <img src="images/smartphone/s9+.jpg" alt="" />
-                                            <h4><a href="productdetail.html">SAMSUNG GALAXY S9 PLUS</a></h4>
+                                            <h4><a href="bidderproductdetail.html">SAMSUNG GALAXY S9 PLUS</a></h4>
                                             <h5> 17.000.000 VND</h5>
-                                            
+                                            <button type="button" class="btn btn-default add-to-cart"><i
+                                                    class="fa fa-plus-square"></i>Add to watchlist</button>
                                         </div>
                                     </div>
                                 </div>
@@ -229,9 +270,10 @@
                                     <div class="single-products">
                                         <div class="productinfo text-center">
                                             <img src="images/smartphone/note10.jpg" alt="" />
-                                            <h4><a href="productdetail.html">SAMSUNG GALAXY NOTE10</a></h4>
+                                            <h4><a href="bidderproductdetail.html">SAMSUNG GALAXY NOTE10</a></h4>
                                             <h5> 17.000.000 VND</h5>
-                                           
+                                            <button type="button" class="btn btn-default add-to-cart"><i
+                                                    class="fa fa-plus-square"></i>Add to watchlist</button>
                                         </div>
                                     </div>
                                 </div>
@@ -243,9 +285,10 @@
                                     <div class="single-products">
                                         <div class="productinfo text-center">
                                             <img src="images/smartphone/note8.jpg" alt="" />
-                                            <h4><a href="productdetail.html">SAMSUNG GALAXY NOTE8</a></h4>
+                                            <h4><a href="bidderproductdetail.html">SAMSUNG GALAXY NOTE8</a></h4>
                                             <h5> 17.000.000 VND</h5>
-                                            
+                                            <button type="button" class="btn btn-default add-to-cart"><i
+                                                    class="fa fa-plus-square"></i>Add to watchlist</button>
                                         </div>
                                     </div>
                                 </div>
@@ -255,9 +298,10 @@
                                     <div class="single-products">
                                         <div class="productinfo text-center">
                                             <img src="images/smartphone/note9.jpg" alt="" />
-                                            <h4><a href="productdetail.html">SAMSUNG GALAXY NOTE9</a></h4>
+                                            <h4><a href="bidderproductdetail.html">SAMSUNG GALAXY NOTE9</a></h4>
                                             <h5> 17.000.000 VND</h5>
-                                          
+                                            <button type="button" class="btn btn-default add-to-cart"><i
+                                                    class="fa fa-plus-square"></i>Add to watchlist</button>
                                         </div>
                                     </div>
                                 </div>
@@ -267,9 +311,10 @@
                                     <div class="single-products">
                                         <div class="productinfo text-center">
                                             <img src="images/smartphone/iphone7.jpg" alt="" />
-                                            <h4><a href="productdetail.html">APPLE IPHONE 7</a></h4>
+                                            <h4><a href="bidderproductdetail.html">APPLE IPHONE 7</a></h4>
                                             <h5> 17.000.000 VND</h5>
-                                            
+                                            <button type="button" class="btn btn-default add-to-cart"><i
+                                                    class="fa fa-plus-square"></i>Add to watchlist</button>
                                         </div>
                                     </div>
                                 </div>
@@ -351,6 +396,7 @@
     <script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/account.js"></script>
 </body>
 
 </html>

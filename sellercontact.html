@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>My Account | Online Auction</title>
+    <title>CONTACT US | Online Auction</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -15,7 +15,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="images/icon/logo2.jpg">
+    <link rel="shortcut icon" href="/images/icon/logo2.jpg">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
@@ -38,9 +38,9 @@
                         </div>
                         <div class="our-link">
                             <ul>
-                                <li><a href="bidderaccount.html"><i class="fa fa-user s_color"></i> My Account</a></li>
-                                <li><a href="watchlist.html"><i class="fa fa-eye"></i> Watchlist</a></li>
-                                <li><a href="biddercontact.html"><i class="fa fa-phone"></i> Contact Us</a></li>
+                                <li><a href="selleraccount.html"><i class="fa fa-user s_color"></i> My Account</a></li>
+                                <li><a href="sell.html"><i class="fa fa-tags"></i> Sell</a></li>
+                                <li><a href="sellercontact.html"><i class="fa fa-phone"></i> Contact Us</a></li>
                                 <li><a href="index.html"><i class="fa fa-sign-out"></i> Logout</a></li>
                             </ul>
                         </div>
@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <a href="bidderindex.html"><img src="images/icon/logo2.jpg" alt="" /></a>
+                        <a href="selleraccount.html"><img src="images/icon/logo2.jpg" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -73,22 +73,6 @@
                                 <span class="icon-bar"></span>
                             </button>
                         </div>
-                        <div class="mainmenu pull-left">
-                            <ul class="nav navbar-nav collapse navbar-collapse">
-                                <li><a href="bidderindex.html" class="active">Home</a></li>
-                                <li class="dropdown"><a href="">Category<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="bidderelectronicdevice.html">Electronic Device</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="" onclick="return upgrade()">Sell</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="search_box pull-right">
-                            <input type="text" placeholder="Search" />
-                        </div>
                     </div>
                 </div>
             </div>
@@ -96,87 +80,32 @@
         <!--/header-bottom-->
     </header>
     <!--/header-->
-    <section>
-        <div class="container">
+    <div id="contact-page" class="container">
+        <div class="bg">
             <div class="row">
-                <div class="col-sm-3">
-                    <div class="left-sidebar">
-                        <h2>Information</h2>
-                        <div class="panel-group category-products" id="accordian">
-                            <!--account information-->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="bidderaccount.html">
-                                            Account Information
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a href="bidderchangepassword.html">
-                                                Change Password
-                                            </a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/account-information-->
-                        <h2>Listing</h2>
-                        <div class="panel-group category-products" id="accordian">
-                            <!--account information-->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="watchlist.html">
-                                            Watchlist
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div></div>
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="bidderactive.html">
-                                            Active
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="successful.html">
-                                            Successful
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-12">
+                    <h2 class="title text-center">Contact <strong>Us</strong></h2>
                 </div>
-                <div class="col-sm-9 padding-right">
-                    <div class="bidder_account">
-                        <!--end_soon_items-->
-                        <h2 class="title text-center">Information</h2>
-                        <div class="col-sm-12">
-                            <div class="account-form">
-                                <form>
-                                    Username:<br> <input type="text" name="username" value="bidder" disabled><br>
-                                    Fullname:<br> <input type="text" name="fullname" value="Bidder"><br>
-                                    Email:<br> <input type="text" name="email" value="Bidder@gmail.com"><br>
-                                    D.O.B:<br> <input type="text" name="dob" value="30/04/1999"><br>
-                                    <button type="submit" class="btn btn-default"
-                                        onclick="return bidder_account_info(1)">Save</button>
-                                    <button type="Cancel" class="btn btn-default"
-                                        onclick="return bidder_account_info(0)"">Cancel</button>
-                                </form>
-                            </div>
-                        </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="contact-info">
+                        <address>
+                            <p>AUCTION</p>
+                            <p><i class="fa fa-map-marker"></i> Address: 227 Nguyen Van Cu St, Ward 4, District 5,
+                                HCMC
+                            </p>
+                            <p> <i class="fa fa-phone"></i> Phone: +84 938 394 171
+                            </p>
+                            <p> <i class="fa fa-envelope"></i> Email: contact@auction.com
+                            </p>
+                        </address>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!--/#contact-page-->
     <footer id="footer">
         <!--Footer-->
         <div class="footer-widget">
@@ -239,7 +168,6 @@
     <script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
-    
 </body>
 
 </html>

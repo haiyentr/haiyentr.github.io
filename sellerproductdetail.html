@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SELL | Online Auction</title>
+    <title>SMARTPHONE | Online Auction</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -20,9 +20,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
     <link rel="apple-touch-icon-precomposed" href="">
-    <script src="https://cdn.tiny.cloud/1/jivrlptguoa44xw0zygvjmre93q8sg4d3ozy5t7l6tggab1n
-    /tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>tinymce.init({ selector: 'textarea' });</script>
 </head>
 <!--/head-->
 
@@ -83,52 +80,123 @@
         <!--/header-bottom-->
     </header>
     <!--/header-->
-    <section id="form">
-        <!--form-->
+    <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-8">
-                    <div class="sell-form">
-                        <form>
-                            <h2>Product</h2>
-                            <label>Product Name:</label>
-                            <input type="text" />
-                            <label>Category:</label>
-                            <select>
-                                <option value="elctronicdevice">Electronic device</option>
-                            </select>
-                            <select>
-                                <option value="Smartphone">Smartphone</option>
-                                <option value="Laptop">Laptop</option>
-                            </select>
-                            <label>Image:</label>
-                            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" multiple>
-                            <label>Startding Price:</label>
-                            <input type="text" />
-                            <label>Price Step:</label>
-                            <input type="text" />
-                            <label>Buy Now(Optional):</label>
-                            <input type="text" />
-                            <label>Details:</label>
-                            <textarea>Write your details</textarea>
-                            <label>Do you want to automatically extend the time?</label>
-                            <label class="container">Yes
-                                <input type="radio" checked="checked" name="radio">
-                            </label>
-                            <label class="container">No
-                                <input type="radio" checked="checked" name="radio">
-                            </label>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                            <button type="Cancel" class="btn btn-default">Cancel</button>
+                <div class="col-sm-12">
+                    <div class="product-details">
+                        <!--product-details-->
+                        <div class="col-sm-5">
+                            <div class="view-product">
+                                <img src="images/smartphone/s10+.jpg" alt="" />
+                            </div>
+                            <div id="similar-product" class="carousel slide" data-ride="carousel">
 
-                        </form>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <a href=""><img src="images/smartphone/s10+_1.jpg" alt=""></a>
+                                        <a href=""><img src="images/smartphone/s10+_2.jpg" alt=""></a>
+                                        <a href=""><img src="images/smartphone/s10+_3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href=""><img src="images/smartphone/s10+_1.jpg" alt=""></a>
+                                        <a href=""><img src="images/smartphone/s10+_2.jpg" alt=""></a>
+                                        <a href=""><img src="images/smartphone/s10+_3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href=""><img src="images/smartphone/s10+_1.jpg" alt=""></a>
+                                        <a href=""><img src="images/smartphone/s10+_2.jpg" alt=""></a>
+                                        <a href=""><img src="images/smartphone/s10+_3.jpg" alt=""></a>
+                                    </div>
+
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left item-control" href="#similar-product" data-slide="prev">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                <a class="right item-control" href="#similar-product" data-slide="next">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="product-information">
+                                <!--/product-information-->
+                                <!--img src="images/icon/new.jpg" class="newarrival" alt="" /-->
+                                <h2>SAMSUNG GALAXY S10 PLUS</h2>
+                                <span>
+                                    <span>17.0000.000 VND</span>
+                                    <br>
+                                </span>
+                                <p><b>Highest bidder:</b> ***Hai Yen <b>Rating:</b> 4.9 </p>
+                                <p><b>Start date:</b> 10/11/2019</p>
+                                <div class="remaingtime">
+                                    <p><b>Remaing time:</b> 2 Days 07:22:00</p>
+                                </div>
+                            </div>
+                            <!--/product-information-->
+                        </div>
+                    </div>
+                    <!--/product-details-->
+                    <div class="col-sm-12">
+                        <h2>Details</h2>
+                        <p>Samsung Galaxy s10 plus made by Samsung company.
+                        </p>
+                        <button type="button" class="btn btn-fefault edit">
+                            Edit Detail
+                        </button>
 
                     </div>
+
+                    <div class="col-sm-12">
+                        <h2>History</h2>
+                        <table id="history" style="width:100%">
+                            <tr>
+                                <th>Time</th>
+                                <th>Bidder</th>
+                                <th>Price</th>
+                                <th>Denied</th>
+                            </tr>
+                            <tr>
+                                <td>5/12/2019 20:00:00</td>
+                                <td>************Smith</td>
+                                <td>17.000.000 VND</td>
+                                <td class="remove-pr">
+                                    <a href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4/12/2019 10:04:00</td>
+                                <td>************An</td>
+                                <td>16.900.000 VND</td>
+                                <td class="remove-pr">
+                                    <a href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3/12/2019 21:30:20</td>
+                                <td>************Van</td>
+                                <td>16.800.000 VND</td>
+                                <td class="remove-pr">
+                                    <a href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
                 </div>
+                <!--/recommended_items-->
             </div>
-        </div>
     </section>
-    <!--/form-->
 
     <footer id="footer">
         <!--Footer-->
@@ -192,6 +260,7 @@
     <script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/account.js"></script>
 </body>
 
 </html>
