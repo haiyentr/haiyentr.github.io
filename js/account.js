@@ -54,3 +54,16 @@ function upgrade() {
     window.location = "bidderindex.html";
     return false;
 }
+
+function seller_sell(index) {
+    if (index == 1) {
+        alert("Submit successfully");
+        window.location = "selleraccount.html";
+        return false;
+    }
+    if (index == 0) {
+        alert("Cancel successfully");
+        window.location = "selleraccount.html";
+        return false;
+    }
+}
